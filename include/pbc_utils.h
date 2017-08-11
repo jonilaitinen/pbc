@@ -40,27 +40,59 @@ int pbc_set_msg_to_stderr(int i);
 /*@manual log
 Reports error message and exits with code 128.
 */
+#ifdef _MSC_VER
+
+__declspec(noreturn) void pbc_die(const char *err, ...);
+
+#else
+
 void pbc_die(const char *err, ...)
-    __attribute__((__noreturn__))
-    __attribute__((format (printf, 1, 2)));
+__attribute__((__noreturn__))
+__attribute__((format(printf, 1, 2)));
+
+#endif
 
 /*@manual log
 Reports informational message.
 */
+#ifdef _MSC_VER
+
+void pbc_info(const char *err, ...);
+
+#else
+
 void pbc_info(const char *err, ...)
-    __attribute__((format (printf, 1, 2)));
+__attribute__((format(printf, 1, 2)));
+
+#endif
 
 /*@manual log
 Reports warning message.
 */
+#ifdef _MSC_VER
+
+void pbc_warn(const char *err, ...);
+
+#else
+
 void pbc_warn(const char *err, ...)
-    __attribute__((format (printf, 1, 2)));
+__attribute__((format(printf, 1, 2)));
+
+#endif
 
 /*@manual log
 Reports error message.
 */
+#ifdef _MSC_VER
+
+void pbc_error(const char *err, ...);
+
+#else
+
 void pbc_error(const char *err, ...)
-    __attribute__((format (printf, 1, 2)));
+__attribute__((format(printf, 1, 2)));
+
+#endif
 
 #ifndef UNUSED_VAR
 #if defined(__GNUC__)

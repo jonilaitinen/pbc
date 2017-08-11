@@ -60,7 +60,9 @@ void field_curve_use_random_solvefory(field_ptr f);
 
 void field_curve_set_quotient_cmp(field_ptr c, mpz_t quotient_cmp);
 
+#ifndef _MSC_VER
 #pragma GCC visibility push(hidden)
+#endif
 // Internal:
 
 element_ptr curve_x_coord(element_t e);
@@ -74,6 +76,8 @@ void curve_from_x(element_ptr e, element_t x);
 void curve_set_si(element_t R, long int x, long int y);
 void curve_set_gen_no_cofac(element_ptr a);
 
+#ifndef _MSC_VER
 #pragma GCC visibility pop
+#endif
 
 #endif //__PBC_CURVE_H__

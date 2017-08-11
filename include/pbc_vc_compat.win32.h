@@ -6,4 +6,4 @@
 
 #define NULL 0
 
-#define snprintf _snprintf
+//#define snprintf _snprintf

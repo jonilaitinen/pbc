@@ -106,57 +106,58 @@
     <ProjectGuid>{FB108CA8-CBA9-4CC3-8FC5-CB2BB5C224B3}</ProjectGuid>
     <RootNamespace>pbcwin</RootNamespace>
     <ProjectName>pbclib</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -189,50 +190,50 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(SolutionDir)..\include;$(SolutionDir)..;$(SolutionDir)..\..\mpir\lib\$(Platform)\Debug;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)..\..\mpir\lib\$(Platform)\Debug;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)..\..\include;$(ProjectDir)..\..;$(ProjectDir)..\..\..\mpir\lib\$(Platform)\Debug;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\..\..\mpir\lib\$(Platform)\Debug;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)lib\$(Platform)\Debug\</OutDir>
     <IntDir>$(SolutionDir)obj\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(SolutionDir)..\include;$(SolutionDir)..;$(SolutionDir)..\..\mpir\lib\$(Platform)\Debug;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)..\..\mpir\lib\$(Platform)\Debug;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)..\..\include;$(ProjectDir)..\..;$(ProjectDir)..\..\..\mpir\lib\$(Platform)\Debug;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\..\..\mpir\lib\$(Platform)\Debug;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)lib\$(Platform)\Debug\</OutDir>
     <IntDir>$(SolutionDir)obj\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">
-    <IncludePath>$(SolutionDir)..\include;$(SolutionDir)..;$(SolutionDir)..\..\mpir\dll\$(Platform)\Debug;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)..\..\mpir\dll\$(Platform)\Debug;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)..\..\include;$(ProjectDir)..\..;$(ProjectDir)..\..\..\mpir\dll\$(Platform)\Debug;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\..\..\mpir\dll\$(Platform)\Debug;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)dll\$(Platform)\Debug\</OutDir>
     <IntDir>$(SolutionDir)obj\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|x64'">
-    <IncludePath>$(SolutionDir)..\include;$(SolutionDir)..;$(SolutionDir)..\..\mpir\dll\$(Platform)\Debug;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)..\..\mpir\dll\$(Platform)\Debug;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)..\..\include;$(ProjectDir)..\..;$(ProjectDir)..\..\..\mpir\dll\$(Platform)\Debug;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\..\..\mpir\dll\$(Platform)\Debug;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)dll\$(Platform)\Debug\</OutDir>
     <IntDir>$(SolutionDir)obj\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>$(SolutionDir)..\include;$(SolutionDir)..;$(SolutionDir)..\..\mpir\lib\$(Platform)\Release;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)..\..\mpir\lib\x64\Release;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)..\..\include;$(ProjectDir)..\..;$(ProjectDir)..\..\..\mpir\lib\$(Platform)\Release;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\..\..\mpir\lib\$(Platform)\Release;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)lib\$(Platform)\Release\</OutDir>
     <IntDir>$(SolutionDir)obj\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(SolutionDir)..\include;$(SolutionDir)..;$(SolutionDir)..\..\mpir\lib\x64\Release;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)..\..\mpir\lib\x64\Release;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)..\..\include;$(ProjectDir)..\..;$(ProjectDir)..\..\..\mpir\lib\x64\Release;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\..\..\mpir\lib\$(Platform)\Release;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)lib\$(Platform)\Release\</OutDir>
     <IntDir>$(SolutionDir)obj\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">
-    <IncludePath>$(SolutionDir)..\include;$(SolutionDir)..;$(SolutionDir)..\..\mpir\dll\$(Platform)\Release;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)..\..\mpir\dll\$(Platform)\Release;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)..\..\include;$(ProjectDir)..\..;$(ProjectDir)..\..\..\mpir\dll\$(Platform)\Release;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\..\..\mpir\dll\$(Platform)\Release;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)dll\$(Platform)\Release\</OutDir>
     <IntDir>$(SolutionDir)obj\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|x64'">
-    <IncludePath>$(SolutionDir)..\include;$(SolutionDir)..;$(SolutionDir)..\..\mpir\dll\$(Platform)\Release;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)..\..\mpir\dll\$(Platform)\Release;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)..\..\include;$(ProjectDir)..\..;$(ProjectDir)..\..\..\mpir\dll\$(Platform)\Release;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\..\..\mpir\dll\$(Platform)\Release;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)dll\$(Platform)\Release\</OutDir>
     <IntDir>$(SolutionDir)obj\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
